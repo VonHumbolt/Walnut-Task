@@ -1,0 +1,26 @@
+## Nodejs
+
+/walnut-news/node_modules
+
+
+## Laravel
+
+/walnut-portal/.phpunit.cache
+/walnut-portal/node_modules
+/walnut-portal/public/build
+/walnut-portal/public/hot
+/walnut-portal/public/storage
+/walnut-portal/storage/*.key
+/walnut-portal/vendor
+/walnut-portal/.env
+/walnut-portal/.env.backup
+/walnut-portal/.env.production
+/walnut-portal/.phpunit.result.cache
+/walnut-portal/Homestead.json
+/walnut-portal/Homestead.yaml
+/walnut-portal/auth.json
+/walnut-portal/npm-debug.log
+/walnut-portal/yarn-error.log
+/walnut-portal/.fleet
+/walnut-portal/.idea
+/walnut-portal/.vscode
