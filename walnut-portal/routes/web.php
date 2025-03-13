@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CallbackController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/callback', [CallbackController::class, 'callback'])->name('callback');
+Route::post('/test-receiver', [TestController::class, 'test'])->name('test');

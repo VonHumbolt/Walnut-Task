@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class IncomingLogData extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'payload',
+        'inserted',
+    ];
 }

@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class IncomingLog extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'source',
+        'title',
+        'word_count',
+        'incoming_log_data_id'
+    ];
 }
