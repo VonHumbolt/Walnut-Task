@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminUsersController;
 use App\Http\Controllers\CallbackController;
+use App\Http\Controllers\IncomingLogController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,5 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/callback', [CallbackController::class, 'callback'])->name('callback');
-Route::get('/', [CallbackController::class, 'show'])->name('callback.show');
+Route::get('/callbackLogs', [CallbackController::class, 'show'])->name('callback.show');
 Route::post('/test-receiver', [TestController::class, 'test'])->name('test');
+
+Route::get('/incomingLogs', [IncomingLogController::class, 'show'])->name('incomingLog.show');
+
+Route::get('/', [AdminUsersController::class, 'show'])->name('adminUsers.show');
