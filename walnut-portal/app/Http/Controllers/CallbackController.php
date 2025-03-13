@@ -65,6 +65,11 @@ class CallbackController extends Controller
         }
     }
 
+    public function show() {
+        $callbackLogs = CallbackLog::query()->orderBy('created_at', 'desc')->get();
+        return view('callbackLogs', ['logs' => $callbackLogs]);
+    }
+
     private function sendRequestToNewsApi()
     {
         ini_set('max_execution_time', 300);

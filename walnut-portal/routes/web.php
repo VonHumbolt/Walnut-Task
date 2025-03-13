@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/callback', [CallbackController::class, 'callback'])->name('callback');
+Route::get('/', [CallbackController::class, 'show'])->name('callback.show');
 Route::post('/test-receiver', [TestController::class, 'test'])->name('test');
